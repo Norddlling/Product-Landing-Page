@@ -1,0 +1,263 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --black: black;
+  --white: white;
+  --lightgray: lightgray;
+  --red: #b03700;
+  --brightred: #de0000;
+}
+
+body {
+  margin: 0;
+}
+
+#nav-bar, h2, h1, button {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: var(--black);
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+}
+
+.logo {
+  background-color: var(--black);
+  width: 150px;
+  height: 50px;
+  overflow: hidden;
+}
+
+#header-img {
+  display: block;
+  margin-top: -51px;
+  width: 150px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  
+}
+
+.nav-links li a{
+  padding: 16px 25px;
+}
+
+.nav-links li a, #singIn a {
+  text-decoration: none;
+}
+
+.nav-links li a, #singIn a, .get-it {
+  display: block;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.nav-links li a:hover, #singIn a:hover, #downloadButton:hover, .get-it:hover {
+  background-color: var(--lightgray);
+  color: var(--black);
+}
+
+#singIn a {
+  padding: 16px;
+}
+
+#singIn {
+  position: absolute;
+  right: 0;
+}
+
+.topimage-container {
+  margin-top: 50px;
+}
+
+.header-large-image {
+  width: 100%;
+  height: auto;
+}
+
+.topimage-description {
+  position: relative;
+  bottom: 130px;
+  margin-bottom:-70px;
+  text-align: center;
+}
+
+.topimage-description p, #downloadButton {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+#downloadButton {
+  padding: 10px;
+  background-color: var(--red);
+  font-size: 1.3rem;
+}
+
+main{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 1000px;
+}
+
+.main-section, .pricing-flex {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  margin-bottom: 70px;
+}
+
+#about h2 {
+  margin-top: -3px;
+}
+
+#keyFeatures h2 {
+  margin-top: -16px;
+}
+
+.main-content {
+  margin: 10px;
+  width: 50%;
+}
+
+.main-content, h2 {
+  padding: 0;
+}
+
+#video {
+  width: 100%;
+}
+
+#atleticGirl {
+  width: 100%;
+  height: auto;
+}
+
+.choose-plan {
+  width: 100%;
+}
+
+.choose-plan, .pricing-plan {
+  text-align: center;
+}
+
+.pricing-plan {
+  width: 33%;
+  margin: 10px;
+}
+
+ .plan-name {
+   height: 60px;
+   padding-top: 20px;
+ }
+
+.feature, .get-it {
+  height: 50px;
+  padding-top: 5px;
+}
+
+.plan-name, .email-form, .icons a {
+  color: var(--white);
+}
+
+.basic, #submit {
+  background-color: var(--lightgray);
+}
+
+.premium {
+  background-color: var(--red);
+}
+
+.year-sub {
+  background-color: var(--brightred);
+}
+
+.feature {
+  border: 1px solid var(--lightgray);
+}
+
+.get-it {
+  width: 100%;
+  border: none;
+}
+
+footer {
+  margin: 0;
+  padding: 20px 0;
+  background-color: var(--black);
+  text-align: center;
+}
+
+.email-form {
+  width: 280px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 10px auto;
+}
+
+.email-form label span {
+  display: block;
+}
+
+#submit:hover {
+  background-color: var(--red);
+}
+
+#submit, #email {
+  height: 30px;
+}
+
+.icons span {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.icons span:hover {
+  color: var(--lightgray);
+}
+
+@media only screen and (max-width: 650px) {
+  #nav-bar, .nav-links, .main-section, .pricing-flex {
+    flex-direction: column;
+  }
+
+  .topimage-container {
+    margin-top: 25vh;
+  }
+
+  .nav-links li a {
+    width: 100%;
+  }
+
+  .nav-links li a, h1, h2 {
+    text-align: center;
+  }
+
+  #about h2 {
+    padding-top: 15px;
+  }
+
+  .main-content {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pricing-plan {
+    width: 80%;
+    margin: 40px auto;
+  }
+}
